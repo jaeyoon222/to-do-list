@@ -1,16 +1,9 @@
-const loginForm = document.querySelector(".loginForm");
-const loginInput = loginForm.querySelector("input");
-const loginButton = loginForm.querySelector("button");
+const loginInput = document.querySelector(".loginForm input");
+const loginButton = document.querySelector(".loginForm .button");
 
 function onLoginBtnClick() {
     const userId = loginInput.value;
-
-    if (userId === "") {
-        return console.log("Please write ID");
-    }
-    if (userId.length > 15) {
-        return console.log("ID is too long");
-    }
+    console.log(userId);
 }
 
 loginButton.addEventListener("click", onLoginBtnClick);
