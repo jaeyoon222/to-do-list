@@ -19,6 +19,7 @@ function paintGreeting(userId) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
+
 const savedId = localStorage.getItem(ID_KEY);
 
 if (savedId === null) {
