@@ -9,6 +9,8 @@ function onLoginSubmit(event) {
     loginForm.classList.add(HIDDEN_CLASSNAME);
 
     const userId = loginInput.value;
+    console.log(userId);
+    localStorage.setItem("userId", userId);
     greeting.innerText = `Welcome ${userId}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
